@@ -1,0 +1,22 @@
+Описание формата OFI-файлов
+
+Структура OFI-файла представляет собой две части
+- Максимальная высота символа
+- Последовательность record-ов типа TSymbol 
+
+Первая часть это просто переменная типа Byte, вторая - смотрите тип данных в хедере движка. Считывание файла на Delphi может выглядеть примерно так:
+
+procedure OFI_Load( FileName : String );
+var
+  Symbols : array[ 0..255 ] of TSymbol;
+  Height  : Byte;
+Begin
+AssignFile( F, FileName );
+Reset( F, 1 );
+BlockRead( F, Height, 1 );
+for i := 0 to 255 do
+  BlockRead( F, Symbols[ i ], SizeOf( TSymbol ) );
+CloseFile( F );
+End;
+
+Отрисовку текстуры шрифта можно реализовать так: вырезаем кусок текстуры с координат Symbols[ i ].X/Y до Symbols[ i ].X + Symbols[ i ].Width и Symbols[ i ].Y + Height, и рисуем=)
