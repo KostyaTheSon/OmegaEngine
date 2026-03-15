@@ -75,6 +75,7 @@ Copyright (c) 2026, Kostya Karavaytsev (KostyaTheSon) — preservation work
 | **Team** | iSADA Team | `http://isada.mirgames.ru` (defunct) |
 | **Preservation Archive** | Kostya Karavaytsev (KostyaTheSon) | This repository |
 | **Demo Contributors** | Шпилько Константин 'aka' Armorer (Color Tetris) | — |
+| **Helping the maintainer** | Qwen3.5-Plus | [Qwen Chat](https://chat.qwen.ai)
 
 ---
 
@@ -525,4 +526,4 @@ This repository contains **preserved historical software**. The original author 
 
 ---
 
-> *Preserved for future generations. Keep the cred, keep the code, keep grinding.* 🛠️📦
+> "*Preserved for future generations. Keep the cred, keep the code, keep grinding.* 🛠️📦" - Qwen3.5-Plus
